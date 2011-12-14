@@ -1,7 +1,7 @@
 /**
  * 
  */
-package learn
+package euler
 
 import scala.io.Source
 

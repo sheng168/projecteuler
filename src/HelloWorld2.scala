@@ -1,6 +1,6 @@
 import java.lang.Math;
 
-object HelloWorld {
+object HelloWorld2 {
 
   def main(args: Array[String]): Unit = {
     println("Hello World!")

@@ -1,4 +1,4 @@
-package learn
+package euler
 
 import java.util.Calendar._
 

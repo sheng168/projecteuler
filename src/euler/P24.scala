@@ -1,4 +1,4 @@
-package learn
+package euler
 
 object P24 {
 
