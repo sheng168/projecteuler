@@ -3,7 +3,7 @@ package euler
 import collection.mutable.ArrayBuffer
 
 // val n = 10
-object Prime {
+object Prime_ {
     var primes = ArrayBuffer(2L, 3)
     
     def first(n: Int): Seq[Long] = {
@@ -30,7 +30,7 @@ object Euler {
     val i = List(1,2,3).view.filter(_<3).find(_==2)
     println(i)
     val s = System.currentTimeMillis()
-    println(Prime.first(20001).last)
+    println(Prime_.first(20001).last)
     println(System.currentTimeMillis() - s)
   }
 
