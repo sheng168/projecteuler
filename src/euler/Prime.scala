@@ -35,7 +35,9 @@ object Prime {
   def _isPrime(n: Long) =  ! primes.view.takeWhile(_ <= Math.sqrt(n)).exists(n % _ == 0)
   
   def isPrime(n: Long) = {
-    if (n % 2 == 0)
+    if (n == 2)
+      true
+    else if (n % 2 == 0)
       false
     else if (primes.last >= n)
       primes.contains(n)
