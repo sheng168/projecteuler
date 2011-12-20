@@ -87,6 +87,23 @@ object P170_Pandigital {
   
   
   def main(args: Array[String]): Unit = {
+    var min: Long = 123456789
+    
+    for (i <- 3 to 100) {
+	    val r = (9 to 0 by -1).toArray.permutations.map(a => (a, splitDiv(a, i)))
+	    		.find(t => t._1.mkString.toLong <= min || t._2 != None && pandig_div(t._2.get, i))
+	//    val s = r.take(5).toList
+	    val n = r.get._1.mkString.toLong
+	    
+	    if (n > min) {
+	      min = n
+	    }
+	    println(i, min, r, r.get._2.map(_.toList))
+	//    s(0).get.mkString(",") 
+    }
+
+    return
+    
     for (i <- 101 to 1000) {
 	    val r = (9 to 0 by -1).toArray.permutations.map(a => splitDiv(a, i)).filter(_ != None).filter(op => pandig_div(op.get, i))
 	//    val s = r.take(5).toList
