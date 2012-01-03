@@ -6,7 +6,7 @@ object Xml {
 
  
   def main(args: Array[String]) {
-    
+    val x = <a>as</a>
     val pre = "<hello>"
     val rep = "<world/>"
       
