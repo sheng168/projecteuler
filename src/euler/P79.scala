@@ -2,7 +2,9 @@ package euler
 
 object P79 {
 
-  def main(args: Array[String]): Unit = {}
+  def main(args: Array[String]): Unit = {
+    // solved using Excel
+  }
 
 }
 /*

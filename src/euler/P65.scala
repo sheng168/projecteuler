@@ -2,7 +2,9 @@ package euler
 
 object P65 {
 
-  def main(args: Array[String]): Unit = {}
+  def main(args: Array[String]): Unit = {
+    // BigFraction class
+  }
 
 }
 
