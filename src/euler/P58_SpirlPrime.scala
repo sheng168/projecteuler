@@ -6,43 +6,36 @@ import math.BigFraction
 class P58 extends TestCase {
   import Assert._
   
-  def digitSum(n: BigInt) = {
-    n.toString().map(_.asDigit).sum
+  def spirl(layer: Int) = {
+    
   }
   
-  def digSumPow(a: Int, b: Int) = {
-    digitSum(BigInt(a).pow(b))
-  }
-
-  def test10_100 {
-    assertEquals(1, digSumPow(10, 100))
-  }
-  def test100_100 {
-    assertEquals(1, digSumPow(100, 100))
+  def find(ratio: Double): Int = {
+    var dia = 1
+    var primes = 0
+    for (layer <- 1 until Int.MaxValue) {
+      for (n <- 1 to 4) {
+        dia += 2 * layer
+        if (Prime.isPrime(dia)) {
+          primes +=1
+        }
+        println(layer, dia)
+      }
+      
+      val count = layer * 4 + 1
+      val percent = primes.toFloat / count
+      println(primes, count, percent)
+      
+      if (percent < 0.1) {
+        return layer * 2 + 1
+      }
+    }
+    0
   }
 
   def testFind {
-//    assertEquals(142857, (1 until Int.MaxValue).find(isPermu(_, 5)).get)
-//    (1 until 100).map(isLychrel(_)).foreach(println)
-    
-//    var greater = 0
-//    var less = 0
-    val s = for (a <- 1 until 100; b <- 1 until 100) yield digSumPow(a, b)
-    
-    
-    {
-//      val ncr = isLychrel(n)
-//
-//      if (ncr) {
-//        greater += 1
-//      } else {
-//        less += 1
-//      }
-    }
-    
-//    println(greater, less)
-    println("answer", s.max, s.min)
-    assertEquals(972, s.max)
+
+    println("answer", find(0.1))
   }
 
 }
