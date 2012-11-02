@@ -1,7 +1,11 @@
 package euler
 
 import junit.framework._
+import junit.framework.Assert.assertEquals
 import math.BigFraction
+import scala.BigInt.apply
+import scala.math.BigInt.int2bigInt
+import scala.math.BigInt.long2bigInt
 
 class P100 extends TestCase {
   import Assert._

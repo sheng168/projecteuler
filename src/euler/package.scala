@@ -4,5 +4,5 @@ package object euler {
       yield if (i==1 || i*i == n) List(i) else List(i, n/i)).flatten
   }
   
-  divisors(4)
+  divisors(2              )
 }

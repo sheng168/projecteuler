@@ -16,7 +16,7 @@ class P59 extends TestCase {
   }
   
   xor(s, "god").map(_.toInt).sum
-  xor(s, "god").groupBy(c => c).mapValues(s => s.size).elements.toList.sortBy(_._2)
+  //xor(s, "god").groupBy(c => c).mapValues(s => s.size).elements.toList.sortBy(_._2)
   
   def score(s: String) = {
     s.map(c => if (c == ' ') 1 else 0).sum

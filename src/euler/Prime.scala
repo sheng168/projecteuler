@@ -4,7 +4,7 @@ import collection.mutable.ArrayBuffer
 
 // val n = 10
 object Prime {
-  var primes = ArrayBuffer(2L, 3)
+  val primes = ArrayBuffer(2L, 3)
 
   def first(n: Int): Seq[Long] = {
     var next = primes.last + 2

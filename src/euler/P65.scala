@@ -9,8 +9,10 @@ object P65 {
 }
 
 /*
+
+
 The square root of 2 can be written as an infinite continued fraction.
-Ã2 = 1 + 	
+âˆš2 = 1 + 	
 1
 
   	2 + 	
@@ -24,9 +26,9 @@ The square root of 2 can be written as an infinite continued fraction.
 
   	  	  	  	2 + ...
 
-The infinite continued fraction can be written, Ã2 = [1;(2)], (2) indicates that 2 repeats ad infinitum. In a similar way, Ã23 = [4;(1,3,1,8)].
+The infinite continued fraction can be written, âˆš2 = [1;(2)], (2) indicates that 2 repeats ad infinitum. In a similar way, âˆš23 = [4;(1,3,1,8)].
 
-It turns out that the sequence of partial values of continued fractions for square roots provide the best rational approximations. Let us consider the convergents for Ã2.
+It turns out that the sequence of partial values of continued fractions for square roots provide the best rational approximations. Let us consider the convergents for âˆš2.
 1 + 	
 1
 
@@ -78,7 +80,7 @@ It turns out that the sequence of partial values of continued fractions for squa
 2
 	 
 
-Hence the sequence of the first ten convergents for Ã2 are:
+Hence the sequence of the first ten convergents for âˆš2 are:
 1, 3/2, 7/5, 17/12, 41/29, 99/70, 239/169, 577/408, 1393/985, 3363/2378, ...
 
 What is most surprising is that the important mathematical constant,

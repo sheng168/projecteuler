@@ -45,10 +45,11 @@ object Line {
   def reflectSlope(mBeam: Double, mSurface: Double) = {
     val rad = reflectRad(atan(mBeam), atan(mSurface))
     tan(rad)
+//    Math.p
   }
   
   def reflectRad(beam: Double, surface: Double) = {
-    val normal = surface + Pi/2
+    val normal = surface + scala.math.Pi/2 
     val diff = normal - beam
     normal + diff
   }
@@ -59,5 +60,5 @@ object Line {
     normal + diff
   }
   
-  reflectRad(Pi/2, Pi/4)
+  reflectRad(scala.math.Pi/2, scala.math.Pi/4)
 }
