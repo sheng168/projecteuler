@@ -1,2 +1,5 @@
 /bin
 /.cache
+project/target
+lib_managed
+target
